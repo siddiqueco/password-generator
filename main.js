@@ -18,12 +18,12 @@ function rangeAndNumber(e) {
     passLength.value = value
 }
 //generator function
-const getLowerLetter = () => String.fromCharCode(Math.round(Math.random() * 26) + 97)
-const getUpperLetter = () => String.fromCharCode(Math.round(Math.random() * 26) + 65)
-const getNumber = () => String.fromCharCode(Math.round(Math.random() * 10) + 48)
+const getLowerLetter = () => String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+const getUpperLetter = () => String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+const getNumber = () => String.fromCharCode(Math.floor(Math.random() * 10) + 48)
 const getSymbol = () => {
     const symbol = '!.,?<=>&*%$#@)({}[]/';
-    return symbol[Math.round(Math.random() * symbol.length)]
+    return symbol[Math.floor(Math.random() * symbol.length)]
 }
 
 const randomFunc = {
