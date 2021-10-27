@@ -22,7 +22,7 @@ const getLowerLetter = () => String.fromCharCode(Math.floor(Math.random() * 26) 
 const getUpperLetter = () => String.fromCharCode(Math.floor(Math.random() * 26) + 65)
 const getNumber = () => String.fromCharCode(Math.floor(Math.random() * 10) + 48)
 const getSymbol = () => {
-    const symbol = '!.,?<=>&*%$#@)({}[]/';
+    const symbol = '!.,?<=>&*%$#@)({}[]/~^*';
     return symbol[Math.floor(Math.random() * symbol.length)]
 }
 
@@ -74,7 +74,7 @@ clipboard.addEventListener('click', ()=>{
     textarea.select()
     document.execCommand('copy')
     textarea.remove()
-    alert('Password copied to Clipboard')
+    alert('Password Copied!!')
 })
 
 
